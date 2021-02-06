@@ -1,5 +1,3 @@
-import "./Heading.css";
-
 function Heading(props) {
   return (
     <div className="text-2xl font-bold flex items-center text-blue-400 heading">
