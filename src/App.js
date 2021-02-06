@@ -4,8 +4,8 @@ import SkillsList from "./SkillsList";
 
 function App() {
   return (
-    <div className="container mx-auto max-w-screen-md px-4 md:px-0">
-      <div className="mt-16 mb-8">
+    <div className="container mx-auto max-w-screen-md px-4 mb-8 md:px-0">
+      <div className="my-4 md:mt-16 md:mb-8">
         <Heading name="About Me" />
       </div>
 
