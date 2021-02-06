@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <p>Hello, I'm AJ, software engineer based in Iloilo, Philippines.</p>
+      <p>
+        I am an indie creator and I love to design stuff for the internet.
+        My aim is to create a suite of products that address my clients' problems.
+        I am interested in programmer satisfaction, minimalist approach to
+        web production and creating digital products.
+      </p>
     </div>
   );
 }
