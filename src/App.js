@@ -19,7 +19,7 @@ function App() {
           </p>
           <p className="mt-4">
             I created and sold{" "}
-            <a href="https://btfy.io" className="text-blue-500" target="_blank">
+            <a href="https://btfy.io" rel="noreferrer" className="text-blue-500" target="_blank">
               Btfy
             </a>
             . Right now, I’m interested in studying more about Serverless
@@ -35,7 +35,7 @@ function App() {
         </div>
 
         <div className="flex justify-center mt-4 items-start">
-          <img src="me.jpg" className="w-64 md:w-96" />
+          <img src="me.jpg" className="w-64 md:w-96" alt="me" />
         </div>
       </div>
     </div>
