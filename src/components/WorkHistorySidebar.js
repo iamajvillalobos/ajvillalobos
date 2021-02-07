@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 
 function WorkHistorySidebar({ history }) {
-  const initialState = history.map((work) => {
-    return { company: work.company, active: false };
-  });
+  const initialState = { currentActive: history[0].company };
 
   const [state, setState] = useState(initialState);
 
@@ -12,7 +10,11 @@ function WorkHistorySidebar({ history }) {
       <li
         onClick={handleClick}
         key={work.company}
-        className="pl-4 py-2 bg-gray-100 text-gray-500"
+        className={`py-2 bg-gray-100 cursor-pointer ${
+          state.currentActive === work.company
+            ? "text-blue-500 border-blue-500 border-l-2 pl-3.5"
+            : "text-gray-500 pl-4"
+        }`}
       >
         {work.company}
       </li>
@@ -20,18 +22,7 @@ function WorkHistorySidebar({ history }) {
   });
 
   function handleClick(event) {
-    const currentItemState = state.find((item) => {
-      return item.company === event.target.innerHTML;
-    });
-
-    const newState = state.map((item) => {
-      return {
-        company: item.company,
-        active: item.company === event.target.innerHTML ? true : false,
-      };
-    });
-
-    setState(newState);
+    setState({ currentActive: event.target.innerHTML });
   }
 
   return <ul>{items}</ul>;
