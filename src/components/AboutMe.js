@@ -12,7 +12,7 @@ function AboutMe() {
         <div className="leading-relaxed md:mr-16">
           <p>Hey, I’m AJ! 👋</p>
           <p className="mt-4">
-            I’m a Ruby on Rails developer from the Philippines 🇵🇭, an indie
+            I’m a web developer from the Philippines 🇵🇭, an indie
             maker, and a lifelong learner. I’m currently looking for remote work
             or contracting opportunities.
           </p>
