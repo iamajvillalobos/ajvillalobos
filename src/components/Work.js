@@ -1,4 +1,5 @@
 import Heading from "./Heading";
+import WorkHistory from "./WorkHistory"
 
 function Work() {
   return (
@@ -6,6 +7,7 @@ function Work() {
       <div className="my-4 md:mt-16 md:mb-8">
         <Heading name="Where I've Worked" />
       </div>
+      <WorkHistory />
     </>
   )
 }
