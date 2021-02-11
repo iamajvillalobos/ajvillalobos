@@ -1,7 +1,7 @@
-function WorkHistoryContents({ history }) {
+function WorkHistoryContents({ history, currentActive }) {
   return history.map((work) => {
     return (
-      <div>
+      <div className={currentActive === work.company ? "" : "hidden"}>
         <p className="text-lg font-bold text-gray-500">
           {work.position}
           <a
@@ -20,7 +20,7 @@ function WorkHistoryContents({ history }) {
         <ul className="mt-4 tracking-wide">
           {work.highlights.map((highlight) => {
             return (
-              <li className="flex items-start">
+              <li className="flex items-start" key={highlight}>
                 <svg
                   className="w-4 h-4 text-blue-500 flex-shrink-0 mt-1"
                   xmlns="http://www.w3.org/2000/svg"
