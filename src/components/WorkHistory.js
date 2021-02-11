@@ -87,14 +87,12 @@ function WorkHistory() {
     setState({ currentActive: e });
   }
 
-  console.log(state.currentActive);
-
   return (
-    <div className="flex">
-      <div className="w-1/3 md:w-1/4 mr-4">
+    <div className="flex flex-col md:flex-row">
+      <div className="mb-4 md:w-1/3 md:mr-4">
         <WorkHistorySidebar history={history} onTabChange={handleTabChange} />
       </div>
-      <div className="w-2/3 md:w-3/4">
+      <div className="md:w-2/3">
         <WorkHistoryContents
           history={history}
           currentActive={state.currentActive}
