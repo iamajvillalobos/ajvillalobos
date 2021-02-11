@@ -4,7 +4,7 @@ import SkillsList from "./SkillsList";
 function AboutMe() {
   return (
     <>
-      <div className="my-4 md:mt-16 md:mb-8">
+      <div className="my-4 md:mt-16 md:mb-6">
         <Heading name="About Me" />
       </div>
 
@@ -12,9 +12,9 @@ function AboutMe() {
         <div className="leading-relaxed md:mr-16">
           <p>Hey, I’m AJ! 👋</p>
           <p className="mt-4">
-            I’m a web developer from the Philippines 🇵🇭, an indie
-            maker, and a lifelong learner. I’m currently looking for remote work
-            or contracting opportunities.
+            I’m a web developer from the Philippines 🇵🇭, an indie maker, and a
+            lifelong learner. I’m currently looking for remote work or
+            contracting opportunities.
           </p>
           <p className="mt-4">
             I created and sold{" "}
