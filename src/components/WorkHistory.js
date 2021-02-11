@@ -1,4 +1,5 @@
-import WorkHistorySidebar from "./WorkHistorySidebar"
+import WorkHistorySidebar from "./WorkHistorySidebar";
+import WorkHistoryContents from "./WorkHistoryContents";
 
 function WorkHistory() {
   const history = [
@@ -121,8 +122,12 @@ function WorkHistory() {
 
   return (
     <div className="flex">
-      <div className="w-1/4 mr-4"><WorkHistorySidebar history={history}/></div>
-      <div className="w-3/4">{workHistoryElements}</div>
+      <div className="w-1/4 mr-4">
+        <WorkHistorySidebar history={history} />
+      </div>
+      <div className="w-3/4">
+        <WorkHistoryContents history={history} />
+      </div>
     </div>
   );
 }
