@@ -13,8 +13,7 @@ function AboutMe() {
           <p>Hey, I’m AJ! 👋</p>
           <p className="mt-4">
             I’m a web developer from the Philippines 🇵🇭, an indie maker, and a
-            lifelong learner. I’m currently looking for remote work or
-            contracting opportunities.
+            lifelong learner.
           </p>
           <p className="mt-4">
             I created and sold{" "}
